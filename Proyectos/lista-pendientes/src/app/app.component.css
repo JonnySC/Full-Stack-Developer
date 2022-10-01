@@ -1,6 +1,63 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.form-group{
-    margin: auto;
-    margin-top: 30%;
-    
+body{
+    padding: 0;
+    margin: 0;
+}
+
+form{
+    max-width: 30em;
+    margin: 4em auto;
+    position: relative;
+  
+    padding: 2em 3em;
+}
+form h1{
+    font-family: 'Roboto';
+    color: #0030f9;   
+}
+
+font input[type=text]::placeholder{
+    font-family: 'Roboto';
+    color: #333;
+}
+.data{
+    margin-top: 1em;
+}
+.data li{
+    background: #fff;
+    border-left: 4px solid #0030f9;
+    padding: 1em;
+    margin : 1em auto;
+    color: #666;
+    font-family: 'Roboto';
+    list-style: none;   
+}
+.data li i{
+    float: right;
+    color: #888;
+    cursor: pointer;
+}
+form .input-group-text{
+   background: #0030f9;
+   border-radius: 50%;
+   width: 4em;
+   height: 4em;
+   padding: 1em;
+   color: #fff;
+   position: absolute;
+   right: 30px;
+   top: 80px;
+   cursor: pointer; 
+}
+form .input-group-text i{
+    font-size: 2em;
+}
+form .form-control{
+    height: 3em;
+    font-family: 'Roboto';
+}
+form .form-control:focus{
+    box-shadow: 0;
 }

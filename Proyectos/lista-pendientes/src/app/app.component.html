@@ -1,18 +1,23 @@
 <div class="container">
-  <form action="">
+  <form #todoForm name="todoForm">
     <div class="form-group">
-      <h1 class="text-center text-primary"> Lista de tareas</h1>
+      <h1 class="text-center text-primary">Tareas</h1>
       <div class="input-group-prepend">
         <input type="text" 
         #todoName
         name="todoName"
         class="form-control" 
-        placeholder="Agregar tarea" ngModel>
-        <span class="input-group-text" (click)="guardarTarea(todoName.value)">Añadir</span>
+        placeholder="Añadir tarea" ngModel>
+        <span class="input-group-text" (click)="guardarTarea(todoName.value);todoForm.reset()" >
+          <i class="material-icons">add</i></span>
       </div>
     </div>
-
-    
-
+    <div class="data">
+      <ul class="list-instyled">
+        <li *ngFor="let todo of todoArray">{{todo}}
+          <i (click)="borrarTarea(todo)" class="material-icons">delete</i>
+        </li>
+      </ul>
+    </div>
   </form>
 </div>
