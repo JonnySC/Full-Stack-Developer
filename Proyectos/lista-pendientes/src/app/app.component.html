@@ -3,9 +3,16 @@
     <div class="form-group">
       <h1 class="text-center text-primary"> Lista de tareas</h1>
       <div class="input-group-prepend">
-        <input type="text" class="form-control" placeholder="Agregar tarea">
-        <span class="input-group-text">Guardar</span>
+        <input type="text" 
+        #todoName
+        name="todoName"
+        class="form-control" 
+        placeholder="Agregar tarea" ngModel>
+        <span class="input-group-text" (click)="guardarTarea(todoName.value)">Añadir</span>
       </div>
     </div>
+
+    
+
   </form>
 </div>

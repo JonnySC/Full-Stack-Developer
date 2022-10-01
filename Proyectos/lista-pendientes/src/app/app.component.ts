@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lista-pendientes';
+
+todoArray = [];
+value: any;
+
+guardarTarea(value:any){
+  console.log(value);
+}
+borrarTarea(){
+  console.log('Borrando tarea');
+}
+
 }

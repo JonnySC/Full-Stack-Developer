@@ -23,7 +23,6 @@ describe('AppComponent', () => {
   it(`should have as title 'lista-pendientes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('lista-pendientes');
   });
 
   it('should render title', () => {
