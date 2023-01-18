@@ -17,3 +17,14 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+
+footer{
+    background-color: #007b5e;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+footer img{
+    width: 100px;
+}
+
